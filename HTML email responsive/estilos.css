@@ -1,0 +1,404 @@
+    :root {
+        --main-color: #92C01F;
+        --black: #000;
+        --white: #fff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* General Styles */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    a {
+        color: var(--main-color);
+        text-decoration: none;
+    }
+
+    /* Primera parte - Header */
+    .header {
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .email-security-zone {
+        gap: 8px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    .green-box-container {
+        display: flex;
+        background-color: var(--main-color);
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 24px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    .green-box-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .green-box-image {
+        height: 70px;
+        /* Reducir el tamaño de la imagen */
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    .green-box-text {
+        font-weight: bold;
+        color: white;
+        margin: 0;
+        /* Eliminar el margen inferior del texto */
+    }
+
+    .green-box-button {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .green-box-text-container {
+        flex: 2;
+        /* Aumentar el tamaño del contenedor de texto */
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: grey;
+        margin: 0;
+    }
+
+    .logo-image {
+        width: 200px;
+        height: 50px;
+        margin: 5px 0;
+    }
+
+    .security-zone {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid var(--black)
+    }
+
+    .security-text {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 4px 0;
+    }
+
+
+    .security-info {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 4px;
+        color: black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .security-message {
+        text-align: right;
+        color: white;
+        margin-top: 10px;
+    }
+
+    /* Segunda parte - Background Image */
+    .background-image {
+        background-image: url('img/computador.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 18px 28px;
+        backdrop-filter: blur(80px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 250px;
+    }
+
+    .left-container {
+        width: 100%;
+        align-self: flex-start;
+        color: var(--black);
+    }
+
+    .right-container {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        height: 100%;
+        width: 100%;
+    }
+
+    .learn-more-btn {
+        background-color: var(--main-color);
+        color: white;
+        padding: 10px 20px;
+    }
+
+    /* Tercera parte - Responsive Text Box */
+    .text-box {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .text-box-green {
+        color: var(--main-color);
+        font-weight: bolder;
+        text-align: center;
+        font-size: x-large;
+        margin-bottom: 20px;
+    }
+
+    /* Cuarta parte - Two Image and Text Containers */
+    .image-text-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .image-text-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+    }
+
+    .icon-text-box {
+        width: 50%;
+    }
+
+    .image-icon-text-box {
+        height: 90px;
+        width: 90px;
+        align-self: start;
+        margin: 0 auto;
+    }
+
+    /* Quinta parte - Three Black Buttons */
+    .button-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--black);
+        align-items: center;
+    }
+
+    .black-button {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+        border: 2px var(--white);
+    }
+
+    .black-button:nth-child(2n)::before,
+    .black-button:nth-child(2n)::after {
+        content: "";
+        position: absolute;
+        bottom: 50;
+        height: 60%;
+        width: 2px;
+        background-color: var(--white);
+    }
+
+    /* Sexta parte - Contact with us */
+    .contact-section {
+        text-align: center;
+        margin: 28px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .contact-section p {
+        font-weight: bold;
+        width: 70%;
+        padding-bottom: 12px;
+        border-bottom: 2px solid var(--black);
+    }
+
+    .black-button:nth-child(2)::before {
+        left: -5em;
+    }
+
+    .black-button:nth-child(2)::after {
+        right: -5em;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .security-zone-without-rounded {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid var(--black)
+    }
+
+    .security-zone-without-rounded p {
+        padding: 20px;
+    }
+
+    .security-zone-bottom {
+        background-color: var(--black);
+        color: var(--white);
+        width: fit-content;
+        padding: 4px 20px 4px 4px;
+    }
+
+    footer {
+        padding-bottom: 50px;
+    }
+
+    .privacy-security {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .black-button-ref {
+        color: var(--black);
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .privacy-button,
+    .security-button {
+        background-color: transparent;
+        border: none;
+        color: aqua;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .privacy-button-black,
+    .security-button {
+        background-color: transparent;
+        border: none;
+        color: aqua;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    /* Novena parte - Responsive Text */
+    .policy-text {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 425px) {
+        .security-zone {
+            width: 100%;
+        }
+
+        .background-image {
+            flex-direction: column;
+        }
+
+        .left-container,
+        .right-container,
+        .learn-more-btn,
+        .image-text-item,
+        .image-text-container {
+            width: 100%;
+        }
+
+        .learn-more-btn {
+            text-align: center;
+        }
+
+        .green-box-container {
+            padding-inline: 4px;
+        }
+
+        .green-box-item:nth-child(1) {
+            width: 60%;
+        }
+
+        .button-container {
+            flex-direction: column;
+            background-color: var(--white);
+            gap: 8px;
+        }
+
+        .black-button {
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .security-zone-without-rounded {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .black-button-ref {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+    }
